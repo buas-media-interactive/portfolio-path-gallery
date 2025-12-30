@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Staff Picks Management</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="buas-header text-white py-5">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">Admin Panel</h1>
+            <p class="lead">Manage Staff Picks</p>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <div class="alert alert-info" role="alert">
+            <h4 class="alert-heading">Instructions</h4>
+            <p class="mb-0">Click the star icon (⭐) next to any project to toggle its "Staff Pick" status. 
+            Projects marked as Staff Picks will be highlighted in the gallery. After making changes, click "Save Changes" to download the updated projects.json file.</p>
+        </div>
+
+        <div id="changes-indicator" class="alert alert-warning d-none" role="alert">
+            <strong>Unsaved changes detected!</strong> Click "Save Changes" below to download the updated file.
+        </div>
+
+        <div class="card shadow-sm">
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead class="table-primary-blue text-white">
+                            <tr>
+                                <th>Thumbnail</th>
+                                <th>Student Name</th>
+                                <th>Project Title</th>
+                                <th>Type</th>
+                                <th>Category</th>
+                                <th>Year</th>
+                                <th>Views</th>
+                                <th>Staff Pick</th>
+                            </tr>
+                        </thead>
+                        <tbody id="projects-table-body">
+                            <tr>
+                                <td colspan="8" class="text-center py-5">
+                                    <div class="spinner-border text-primary" role="status">
+                                        <span class="visually-hidden">Loading projects...</span>
+                                    </div>
+                                    <p class="mt-3">Loading projects...</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1000;">
+            <button id="save-changes" class="btn btn-primary-orange btn-lg shadow-lg d-none">
+                💾 Save Changes
+            </button>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="index.html" class="btn btn-secondary">← Back to Gallery</a>
+        </div>
+    </div>
+
+    <footer class="buas-footer text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 BUas Portfolio Path - Admin Panel</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script type="module" src="admin.js"></script>
+</body>
+</html>

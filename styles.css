@@ -1,0 +1,267 @@
+/* ==================================
+   BUas Brand Colors & Bootstrap Overrides
+   ================================== */
+
+:root {
+    /* BUas Main Colors */
+    --buas-orange: #EE7622;
+    --buas-blue: #00406B;
+    
+    /* BUas Supporting Colors */
+    --buas-light-blue: #3BB4E5;
+    --buas-green: #76BC20;
+    --buas-grey: #5B6670;
+    
+    /* Additional UI Colors */
+    --bs-body-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ==================================
+   BUas Custom Button Styles
+   ================================== */
+
+.btn-primary-orange {
+    background-color: var(--buas-orange);
+    border-color: var(--buas-orange);
+    color: white;
+}
+
+.btn-primary-orange:hover,
+.btn-primary-orange:focus {
+    background-color: #d66618;
+    border-color: #d66618;
+    color: white;
+}
+
+.btn-primary-blue {
+    background-color: var(--buas-blue);
+    border-color: var(--buas-blue);
+    color: white;
+}
+
+.btn-primary-blue:hover,
+.btn-primary-blue:focus {
+    background-color: #003458;
+    border-color: #003458;
+    color: white;
+}
+
+/* ==================================
+   Header & Footer
+   ================================== */
+
+.buas-header {
+    background: linear-gradient(135deg, var(--buas-blue) 0%, var(--buas-orange) 100%);
+}
+
+.buas-footer {
+    background-color: var(--buas-blue);
+}
+
+/* ==================================
+   Text Colors
+   ================================== */
+
+.text-primary-blue {
+    color: var(--buas-blue) !important;
+}
+
+.text-primary-orange {
+    color: var(--buas-orange) !important;
+}
+
+/* ==================================
+   Badge Styles
+   ================================== */
+
+.badge {
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+}
+
+.badge-type {
+    background-color: var(--buas-light-blue);
+}
+
+.badge-category {
+    background-color: var(--buas-green);
+}
+
+.badge-year {
+    background-color: var(--buas-grey);
+}
+
+.badge-staff-pick {
+    background-color: var(--buas-orange);
+}
+
+.badge-staff-pick::before {
+    content: "⭐ ";
+}
+
+/* ==================================
+   Stat Cards (Homepage)
+   ================================== */
+
+.stat-card {
+    background: linear-gradient(135deg, var(--buas-blue) 0%, var(--buas-light-blue) 100%);
+}
+
+.stat-card .card-body {
+    background: transparent;
+}
+
+/* ==================================
+   Featured Project Section
+   ================================== */
+
+.featured-project {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+.project-card img,
+.project-card embed {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.project-info h3 {
+    color: var(--buas-blue);
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.view-count {
+    font-size: 0.9rem;
+    color: var(--buas-grey);
+    margin-top: 0.5rem;
+}
+
+/* ==================================
+   Gallery Grid Items
+   ================================== */
+
+.gallery-item {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.gallery-item-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background-color: #f5f5f5;
+}
+
+.gallery-item-info {
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.gallery-item-info h4 {
+    color: var(--buas-blue);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.gallery-item-info p {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+/* ==================================
+   Modal Customizations
+   ================================== */
+
+.modal-project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+/* ==================================
+   Admin Panel Styles
+   ================================== */
+
+.table-primary-blue {
+    background-color: var(--buas-blue);
+}
+
+.toggle-pick {
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: transform 0.2s ease;
+}
+
+.toggle-pick:hover {
+    transform: scale(1.2);
+}
+
+.is-staff-pick {
+    color: var(--buas-orange);
+}
+
+.not-staff-pick {
+    color: var(--buas-grey);
+    opacity: 0.3;
+}
+
+.project-thumbnail {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* ==================================
+   Responsive Adjustments
+   ================================== */
+
+@media (max-width: 768px) {
+    .featured-project {
+        min-height: 300px;
+    }
+    
+    .project-card {
+        padding: 1rem;
+    }
+    
+    .gallery-item-image {
+        height: 200px;
+    }
+}
+

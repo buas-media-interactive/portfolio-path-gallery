@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "id": "001",
+      "firstName": "Emma",
+      "lastName": "Johnson",
+      "projectTitle": "Sustainable Fashion Campaign",
+      "projectType": "Promoting",
+      "category": "Client project",
+      "year": "2025",
+      "fileName": "Johnson_Emma_BlockC_CaseStudy.pdf",
+      "staffPick": false,
+      "views": 0
+    },
+    {
+      "id": "002",
+      "firstName": "Liam",
+      "lastName": "Smith",
+      "projectTitle": "Interactive Museum Experience",
+      "projectType": "Interacting",
+      "category": "Self-initiated project",
+      "year": "2025",
+      "fileName": "Smith_Liam_BlockC_CaseStudy.jpg",
+      "staffPick": true,
+      "views": 0
+    },
+    {
+      "id": "003",
+      "firstName": "Sophie",
+      "lastName": "Williams",
+      "projectTitle": "Podcast Series: Stories of Change",
+      "projectType": "Listening",
+      "category": "Client project",
+      "year": "2025",
+      "fileName": "Williams_Sophie_BlockC_CaseStudy.png",
+      "staffPick": false,
+      "views": 0
+    }
+  ]
+}
