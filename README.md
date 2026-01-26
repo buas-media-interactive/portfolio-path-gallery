@@ -1,2 +1,2 @@
 # portfolio-path-gallery
-Portfolio Path Gallery - Featureing Case Studies
+Portfolio Path Gallery - Featuring Case Studies
